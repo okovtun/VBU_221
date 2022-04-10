@@ -3,3 +3,8 @@ https://www.youtube.com/watch?v=_qb0nIzcEXM&list=PLeqyOOqxeiINUveaBPm5nxiv0F_CFR
 
 https://www.cplusplus.com/
 https://en.cppreference.com/w/
+
+TODO:
+1. Вывести в консоль стишок "В лесу родилась Ёлочка".
+   Стишок должен быть выровнен по середине экрана,
+   и его куплеты должны быть разделены пустой строкой.

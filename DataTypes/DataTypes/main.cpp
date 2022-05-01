@@ -23,6 +23,64 @@ void main()	//Ёто главна€ функци€
 
 	cout << true << endl;
 	cout << false << endl;
+
+
+	//size of variable
+	cout << sizeof(int) << endl;
+	cout << INT_MIN << " ... " << INT_MAX << endl;
+	cout << 0 << " ... " << UINT_MAX << endl;
+	//INT_MAX - максимальное значение дл€ знакового int
+	//UINT_MAX - unsigned int max (максимальное значение дл€ беззнакового int)
+	//U - UNSIGNED
+	unsigned short a = -3;
+	cout << a << endl;
+
+	float;	//4 Bytes - вещественное число одинарной точности
+	double;	//8 Bytes - вещественное число двойной точности
+
+	cout << FLT_MIN << " ... " << FLT_MAX << endl;
+
+	cout << .0001 << endl;
+	cout << 1e-4 << endl;
+
+	cout << DBL_MIN << " ... " << DBL_MAX << endl;
+
+	//»дентификаторы 
+	//identifier (идентификатор) - это им€.
+	//int vasya=0;
+	//cout << vasya << endl;
+
+	int Place1;
+	int _1stPlace;
+	double Price=0;
+	cout << Price << endl;
+	//undeclared identifier - необъ€вленный идентификатор
+	//declaration - объ€вление
+	//declare - объ€вл€ть
+	//declaration of variable - объ€вление переменной
+
+	int True;
+	int attendance;	//посещаемость
+	int b;
+	double price;
+	double price_of_coffee=0;
+	int T;	//период
+	int F;	//частота
+
+	cout << price_of_coffee << endl;
+	//»нициализаци€ - это присвоение начального значени€.
+	//ѕроинициализировать
+	
+	double price_of_tea;	//просто объ€вление переменной
+	double price_of_capucino = 0;	//»нициализаци€ при объ€влении
+
+	price_of_tea = 0;	//инициализаци€ после объ€влени€
+
+	int number_of_pencils;
+	cout << "¬ведите количество карандашей: ";
+	cin >> number_of_pencils;	//инициализаци€ вводом с клавиатуры
+
+	cout << typeid(5).name() << endl;
 }
 
 /*
@@ -53,4 +111,13 @@ cout (Console Out) - это поток вывода на экран.
 \n - new line (переводит курсор в начало следующей строки).
 \t - tab. ¬ыводит в консоль символ табул€ции.
 	 —имвол табул€ции занимает до 8ми пробелов.
+*/
+
+/*
+----------------------------------------------
+1. ABC....Zabc....Z0123...9_;
+2. »м€ Ќ≈ может начинатьс€ с цифры;
+3. »мена переменных регистрозависимы;
+4. ƒл€ именовани€ переменных нельз€ использовать ключевые слова €зыка C++.
+----------------------------------------------
 */

@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Elochka", "Elochka\Elochka.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Operators", "Operators\Operators.vcxproj", "{B0FA2CCC-B41C-4770-95BB-2152A6692F7B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataTypesHomeWork", "DataTypesHomeWork\DataTypesHomeWork.vcxproj", "{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{B0FA2CCC-B41C-4770-95BB-2152A6692F7B}.Release|x64.Build.0 = Release|x64
 		{B0FA2CCC-B41C-4770-95BB-2152A6692F7B}.Release|x86.ActiveCfg = Release|Win32
 		{B0FA2CCC-B41C-4770-95BB-2152A6692F7B}.Release|x86.Build.0 = Release|Win32
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Debug|x64.ActiveCfg = Debug|x64
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Debug|x64.Build.0 = Debug|x64
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Debug|x86.ActiveCfg = Debug|Win32
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Debug|x86.Build.0 = Debug|Win32
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Release|x64.ActiveCfg = Release|x64
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Release|x64.Build.0 = Release|x64
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Release|x86.ActiveCfg = Release|Win32
+		{5BE2C3B0-4920-4930-81B4-19F4A1AFD96B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

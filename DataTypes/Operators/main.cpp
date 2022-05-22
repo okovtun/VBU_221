@@ -6,7 +6,9 @@ using std::endl;
 
 //#define ARITHMETICAL_OPERATORS
 //#define ASSIGNMENT_OPERATOR	//Оператор присваивания (=)
-#define INCREMENT_DECREMENT		//(++/--)
+//#define INCREMENT_DECREMENT		//(++/--)
+//#define COMPOUND_ASSIGNMENTS	//Составные присваивания
+#define COMPARISON_OPERATORS	//Операторы сравнения
 
 void main()
 {
@@ -49,17 +51,40 @@ Binary:	+, -, *, /, %;
 	cout << a << "\t" << b << "\t" << c << endl;
 #endif // ASSIGNMENT_OPERATOR
 
+#ifdef INCREMENT_DECREMENT
 	//int i = 0;
-	//++i;	//Prefix incrment
-	//i++;	//Postfix increment
-	//--i;	//Prefix decrement
-	//i--;	//Postfix decrement
+//++i;	//Prefix incrment
+//i++;	//Postfix increment
+//--i;	//Prefix decrement
+//i--;	//Postfix decrement
 
-	//int j = ++i;
-	//cout << i << endl;	//1
-	//cout << j << endl;	//1
+//int j = ++i;
+//cout << i << endl;	//1
+//cout << j << endl;	//1
 
 	int i = 3;
 	i = ++i + ++i;
 	cout << i << endl;
+#endif // INCREMENT_DECREMENT
+
+#ifdef COMPOUND_ASSIGNMENTS
+	unsigned short a = 2;
+	short b = 3;
+	cout << a << endl;
+	cout << b << endl;
+	//a = a + b;
+	a += b;	//a=5
+	cout << a << endl;
+	//a -= b;	//a=2
+	a *= b;
+	a /= b;
+
+	cout << a << endl;
+#endif // COMPOUND_ASSIGNMENTS
+
+	//cout << (!true == false) << endl;
+	//cout << (!false == true) << endl;
+	//cout << (true || false || false) << endl;
+
+	cout << (!true && false && true) << endl;
 }

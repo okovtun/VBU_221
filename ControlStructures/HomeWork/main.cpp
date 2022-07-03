@@ -1,88 +1,60 @@
-#include <iostream>
-#include<conio.h>
-#include<iomanip>
+п»ї#include<iostream>
 using namespace std;
-using std::cin;
-using std::cout;
-using std::endl;
 
-//#define TARGET
-//#define CALC_1
-//#define CALC_2
+//#define Task1
+#define Task2 
+//#define Task3 
+//#define Task4 
+//#define Task5 
 
 void main()
 {
 	setlocale(LC_ALL, "");
-#ifdef TARGET
-	double number;	//Число, вводимое с клавиатуры
-	cout << "Введите число: "; cin >> number;
-	if (number > 0 && number < 10)
+#if defined Task1
+	int n;
+	int i;
+	int reserve;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ С„Р°РєС‚РѕСЂРёР°Р»Р°";
+	cin >> n;
+	int factorial(int n);
 	{
-		cout << "Цель поражена" << endl;
+		reserve = 1;
+		for (i = 1; i <= n; i++)
+		{
+			reserve *= i;
+		}
+		return reserve;
+	}
+	if (n > 0);
+	{
+		cout << factorial(n);
 	}
 	else
 	{
-		cout << "Вы промахнулись" << endl;
+		cout << "Error:n<0.";
 	}
-#endif // TARGET
+	return 0;
 
-#ifdef CALC_1
-	double a, b;	//Числа, вводимые с клавиатуры
-	char s;	//Sign - знак операции
-	cout << "Введите выражение: ";
-	cin >> a >> s >> b;
-	//cout << a << s << b << endl;
-	if (s == '+')
+#endif
+#if defined Task2
+	int n, a;
+	cout << "Р’РІРµРґРёС‚Рµ РѕСЃРЅРѕРІР°РЅРёРµ Рё РїРѕРєР°Р·Р°С‚РµР»СЊ СЃС‚РµРїРµРЅРё: ";
+	cin >> n >> a;
+	int nva = 1;
+	for (int i = 0; i < a; i++)
 	{
-		cout << a << " + " << b << " = " << a + b << endl;
+		nva *= n;
 	}
-	else if (s == '-')
+	cout << nva;
+#endif
+#if defined Task3
+	void main(int argc, char* argv[]);
 	{
-		cout << a << " - " << b << " = " << a - b << endl;
-	}
-	else if (s == '*')
-	{
-		cout << a << " * " << b << " = " << a * b << endl;
-	}
-	else if (s == '/')
-	{
-		//cout << std::setprecision(2) << fixed;
-		cout << a << " / " << b << " = " << a / b << endl;
-	}
-#endif // CALC_1
+		for (int i = 0; i < 255; i++)
+			cout << (char)i << "\t";
+		cout << endl;
+		return 0;
+}
+#endif
 
-#ifdef CALC_2
-	double a, b;
-	char s;
-	do
-	{
-		cout << "Введите арифметическое выражение: ";
-		cin >> a >> s >> b;
-		//cout << a << s << b << endl;
-		switch (s)
-		{
-		case '+':cout << a << " + " << b << " = " << a + b << endl; break;
-		case '-':cout << a << " - " << b << " = " << a - b << endl; break;
-		case '*':cout << a << " * " << b << " = " << a * b << endl; break;
-		case '/':cout << a << " / " << b << " = " << a / b << endl; break;
-		default: cout << "Error: No operation" << endl;
-		}
-		cout << "Для выхода надмите Esc, для продолжения надмите любую клавишу" << endl;
-	} while (_getch() != 27);
-#endif // CALC_2
-
-	int number;	//Число, вводимое с клавиатуры
-	int reverse = 0;//Число, записанное наоборот
-	cout << "Введите число: "; cin >> number;
-	int buffer = number;	//Эта перемнная хранит копию числа, введенного с клавиатуры
-	//Копия нужна для того, чтобы введенные данные остались неизменными.
-	while (buffer)
-	{
-		reverse *= 10;
-		reverse += buffer % 10;
-		buffer /= 10;
-	}
-	cout << number << endl;
-	cout << buffer << endl;
-	cout << reverse << endl;
 }

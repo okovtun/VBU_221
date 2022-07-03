@@ -4,7 +4,15 @@ https://www.youtube.com/watch?v=_qb0nIzcEXM&list=PLeqyOOqxeiINUveaBPm5nxiv0F_CFR
 https://www.cplusplus.com/
 https://en.cppreference.com/w/
 
+TOREAD:
+https://www.softelectro.ru/ieee754.html
+
 TODO:
+1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
+2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg
+3. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg
+
+DONE:
 1. С клавиатуры вводится число, программа вычисляет факториал этого числа;
 2. При помщи цикла for возвести число в степень.
    Показатель степени может быть как положительным, так и отрицательным;

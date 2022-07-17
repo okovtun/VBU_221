@@ -1,60 +1,170 @@
-﻿#include<iostream>
+﻿#include <iostream>
 using namespace std;
+using::cout;
+using::sin;
 
-//#define Task1
-#define Task2 
-//#define Task3 
-//#define Task4 
-//#define Task5 
+#define FIGURES
+//#define CHESSBOARD
+//#define HARDCHESS
 
-void main()
+int main()
 {
-	setlocale(LC_ALL, "");
-#if defined Task1
-	int n;
-	int i;
-	int reserve;
-	cout << "Введите число для вычисления факториала";
-	cin >> n;
-	int factorial(int n);
-	{
-		reserve = 1;
-		for (i = 1; i <= n; i++)
-		{
-			reserve *= i;
-		}
-		return reserve;
-	}
-	if (n > 0);
-	{
-		cout << factorial(n);
-	}
-	else
-	{
-		cout << "Error:n<0.";
-	}
-	return 0;
+	setlocale(LC_ALL, ".866");
 
-#endif
-#if defined Task2
-	int n, a;
-	cout << "Введите основание и показатель степени: ";
-	cin >> n >> a;
-	int nva = 1;
-	for (int i = 0; i < a; i++)
+#ifdef FIGURES
+	cout << "0)" << "\n" << endl;
+	for (int i = 0; i < 5; i++) // ряды
 	{
-		nva *= n;
-	}
-	cout << nva;
-#endif
-#if defined Task3
-	void main(int argc, char* argv[]);
-	{
-		for (int i = 0; i < 255; i++)
-			cout << (char)i << "\t";
+		for (int j = 0; j < 5; j++) // столбцы
+			cout << "*";
 		cout << endl;
-		return 0;
-}
-#endif
+	}
+
+	cout << "\n" << "1)" << endl;
+	for (int i = 0; i < 5; i++) // ряды
+	{
+		for (int j = 0; j <= i; j++) // столбцы
+			cout << "*";
+		cout << endl;
+
+	}
+
+	cout << "\n" << "2)" << endl;
+	for (int i = 0; i < 5; i++) // ряды
+	{
+		for (int j = 0; j < 5 - i; j++)
+			cout << "*";
+		cout << endl;
+	}
+
+	cout << "\n" << "3)" << endl;
+	for (int i = 1; i <= 5; i++) // ряды
+	{
+		for (int j = 1; j < i; j++)
+			cout << " ";
+		{
+			for (int k = i; k <= 5; k++)
+				cout << "*";
+			cout << endl;
+		}
+	}
+
+	cout << "\n" << "4)" << "\n" << endl;
+	for (int i = 1; i <= 5; i++) // ряды
+	{
+		for (int j = i; j < 5; j++)
+			cout << " ";
+		{
+			for (int k = 1; k <= i; k++)
+				cout << "*";
+			cout << endl;
+		}
+
+	}
+
+	cout << "\n" << "5)" << endl;
+	int n = 5; // количество строк и столбцов
+	int a = n; // левая верняя часть
+	int b = n; // правая верхняя часть
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j < n * 2; j++)
+		{
+			if (j == a || j == b)
+				cout << "/";
+			else
+				cout << " ";
+		}
+		a--;
+		b++;
+		cout << "\n" << endl;
+	}
+
+
+	int c = 1; // левая нижняя
+	int d = n * 2 - 1; // правая нижняя
+
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j < n * 2; j++)
+		{
+			if (j == c || j == d)
+				cout << "/";
+			else
+				cout << " ";
+		}
+		c++;
+		d--;
+		cout << "\n" << endl; // какая-то фигня получилась((
+	}
+
+	cout << "\n" << "6)" << endl;
+	for (int i = 0; i < 5; i++) // "+" четные, "-" нечётные 
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			if ((i + j) % 2 == 0)cout << "+";
+			else				 cout << "-";
+		}
+		cout << endl;
+	}
+#endif // FIGURES
+
+
+#ifdef CHESSBOARD
+	int n;
+	cout << "Enter board size: " << endl;
+	cin >> n;
+
+	unsigned char w = 176;
+	unsigned char b = 219;
+
+	for (int i = 0; i < 8; i++)
+	{
+		for (int j = 0; j < 8; j++)
+		{
+			if ((i + j) % 2 == 0)
+				cout << b;
+			else cout << w;
+		}
+		cout << endl; // некрасивая какая-то(
+
+	}
+
+#endif // CHESSBOARD
+
+
+#ifdef HARDCHESS
+	int n;
+	cout << "Enter board size: " << endl;
+	cin >> n;
+
+
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				if ((i + k) % 2)
+				{
+					for (int i = 0; i < 5; i++)
+						cout << "  ";
+
+				}
+				else
+				{
+					for (int i = 0; i < 5; i++)
+						cout << "* ";
+
+				}
+			}
+			if (j < 4)
+				cout << endl;
+
+		}
+		cout << endl;
+	}
+#endif // HARDCHESS
 
 }

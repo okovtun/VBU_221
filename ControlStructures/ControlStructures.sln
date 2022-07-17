@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoolShooter", "CoolShooter\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FOR", "FOR\FOR.vcxproj", "{83661DD2-A0AA-4755-95AD-6B60C2594334}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometry", "Geometry\Geometry.vcxproj", "{25A76C42-5A56-4591-97AA-CFD3B6FC8717}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{83661DD2-A0AA-4755-95AD-6B60C2594334}.Release|x64.Build.0 = Release|x64
 		{83661DD2-A0AA-4755-95AD-6B60C2594334}.Release|x86.ActiveCfg = Release|Win32
 		{83661DD2-A0AA-4755-95AD-6B60C2594334}.Release|x86.Build.0 = Release|Win32
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Debug|x64.ActiveCfg = Debug|x64
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Debug|x64.Build.0 = Debug|x64
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Debug|x86.ActiveCfg = Debug|Win32
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Debug|x86.Build.0 = Debug|Win32
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Release|x64.ActiveCfg = Release|x64
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Release|x64.Build.0 = Release|x64
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Release|x86.ActiveCfg = Release|Win32
+		{25A76C42-5A56-4591-97AA-CFD3B6FC8717}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

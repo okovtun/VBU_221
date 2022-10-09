@@ -1,0 +1,18 @@
+VCS - Version Control System
+SVN
+Subversion
+Mercury
+....
+....
+Git 
+GitHub
+
+Git != GitHub
+
+Repository
+fetch, pull и push
+
+Commit - это контрольная точка
+.gitignore
+
+Branches

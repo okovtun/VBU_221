@@ -4,6 +4,13 @@ https://www.youtube.com/watch?v=_qb0nIzcEXM&list=PLeqyOOqxeiINUveaBPm5nxiv0F_CFR
 https://www.cplusplus.com/
 https://en.cppreference.com/w/
 
+TODO:
+¬ Solution Pointer добавить проект Split, и в этом проекте решить следующую задачу:
+≈сть массив из 10 элементов, заполненный случайными числами. 
+Ќеобходимо создать еще два массива even и odd минимально возможного размера,
+и в массив even скопировать все четные значени€, а в массив odd все нечетные значени€ 
+из исходного массива.
+
 TOREAD:
 https://www.softelectro.ru/ieee754.html
 
